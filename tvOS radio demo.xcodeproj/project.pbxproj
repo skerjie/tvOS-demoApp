@@ -12,6 +12,7 @@
 		F16B3F081DFC47E9000F38F3 /* tvOS_radio_demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F16B3F061DFC47E9000F38F3 /* tvOS_radio_demo.xcdatamodeld */; };
 		F16B3F0B1DFC47E9000F38F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F16B3F091DFC47E9000F38F3 /* Main.storyboard */; };
 		F16B3F0D1DFC47E9000F38F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F16B3F0C1DFC47E9000F38F3 /* Assets.xcassets */; };
+		F16B3F151DFC4EC9000F38F3 /* RadioCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16B3F141DFC4EC9000F38F3 /* RadioCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F16B3F0A1DFC47E9000F38F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F16B3F0C1DFC47E9000F38F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F16B3F0E1DFC47E9000F38F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F16B3F141DFC4EC9000F38F3 /* RadioCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				F16B3F021DFC47E9000F38F3 /* AppDelegate.swift */,
 				F16B3F041DFC47E9000F38F3 /* ViewController.swift */,
+				F16B3F141DFC4EC9000F38F3 /* RadioCollectionViewCell.swift */,
 				F16B3F091DFC47E9000F38F3 /* Main.storyboard */,
 				F16B3F0C1DFC47E9000F38F3 /* Assets.xcassets */,
 				F16B3F0E1DFC47E9000F38F3 /* Info.plist */,
@@ -138,6 +141,7 @@
 			files = (
 				F16B3F051DFC47E9000F38F3 /* ViewController.swift in Sources */,
 				F16B3F031DFC47E9000F38F3 /* AppDelegate.swift in Sources */,
+				F16B3F151DFC4EC9000F38F3 /* RadioCollectionViewCell.swift in Sources */,
 				F16B3F081DFC47E9000F38F3 /* tvOS_radio_demo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
