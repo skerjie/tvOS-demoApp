@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import MediaPlayer
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-
+  
   @IBOutlet weak var collectionView: UICollectionView!
   var stations : [Station] = []
+  var player = AVPlayer()
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -21,7 +23,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     ApiCall().downloadData(vc: self)
     // Do any additional setup after loading the view, typically from a nib.
   }
-
+  
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
@@ -46,8 +48,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
   }
   
   func cellTapped(gest: UITapGestureRecognizer) {
-    if (gest.view as? RadioCollectionViewCell) != nil {
-      print("Tapped")
+    if let cell = gest.view as? RadioCollectionViewCell {
+      playStream(station: stations[(collectionView.indexPath(for: cell)?.row)!])
     }
   }
   
@@ -73,7 +75,25 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     self.stations = sts
     self.collectionView.reloadData()
   }
-
-
+  
+  func playStream(station: Station) {
+    if let url = URL(string: station.streamUrl) {
+      player = AVPlayer(url: url)
+      player.play()
+    }
+  }
+  
+  override func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
+    for item in presses {
+      if item.type == .playPause {
+        if (player.rate > 0) {
+          player.pause()
+        } else {
+          player.play()
+        }
+      }
+    }
+  }
+  
 }
 

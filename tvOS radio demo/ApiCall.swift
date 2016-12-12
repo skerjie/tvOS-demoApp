@@ -29,7 +29,9 @@ class ApiCall {
               let stat = Station(stationDict: obj)
               self.stations.append(stat)
             }
-            vc.updateUI(sts: self.stations)
+            DispatchQueue.main.async {
+              vc.updateUI(sts: self.stations)
+            }
           }
           
         } catch {}
