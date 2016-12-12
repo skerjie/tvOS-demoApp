@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F15BF3801DFE421800EF0191 /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BF37F1DFE421800EF0191 /* ApiCall.swift */; };
+		F15BF3821DFE508400EF0191 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BF3811DFE508400EF0191 /* Station.swift */; };
 		F16B3F031DFC47E9000F38F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16B3F021DFC47E9000F38F3 /* AppDelegate.swift */; };
 		F16B3F051DFC47E9000F38F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16B3F041DFC47E9000F38F3 /* ViewController.swift */; };
 		F16B3F081DFC47E9000F38F3 /* tvOS_radio_demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F16B3F061DFC47E9000F38F3 /* tvOS_radio_demo.xcdatamodeld */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F15BF37F1DFE421800EF0191 /* ApiCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
+		F15BF3811DFE508400EF0191 /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		F16B3EFF1DFC47E9000F38F3 /* tvOS radio demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvOS radio demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F16B3F021DFC47E9000F38F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F16B3F041DFC47E9000F38F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				F16B3F021DFC47E9000F38F3 /* AppDelegate.swift */,
 				F16B3F041DFC47E9000F38F3 /* ViewController.swift */,
 				F16B3F141DFC4EC9000F38F3 /* RadioCollectionViewCell.swift */,
+				F15BF37F1DFE421800EF0191 /* ApiCall.swift */,
+				F15BF3811DFE508400EF0191 /* Station.swift */,
 				F16B3F091DFC47E9000F38F3 /* Main.storyboard */,
 				F16B3F0C1DFC47E9000F38F3 /* Assets.xcassets */,
 				F16B3F0E1DFC47E9000F38F3 /* Info.plist */,
@@ -139,9 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F15BF3801DFE421800EF0191 /* ApiCall.swift in Sources */,
 				F16B3F051DFC47E9000F38F3 /* ViewController.swift in Sources */,
 				F16B3F031DFC47E9000F38F3 /* AppDelegate.swift in Sources */,
 				F16B3F151DFC4EC9000F38F3 /* RadioCollectionViewCell.swift in Sources */,
+				F15BF3821DFE508400EF0191 /* Station.swift in Sources */,
 				F16B3F081DFC47E9000F38F3 /* tvOS_radio_demo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +306,7 @@
 				F16B3F131DFC47E9000F38F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

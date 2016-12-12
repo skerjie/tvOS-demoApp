@@ -13,7 +13,18 @@ class RadioCollectionViewCell: UICollectionViewCell {
   @IBOutlet weak var imageView: UIImageView!
   @IBOutlet weak var titleNameLabel: UILabel!
   
-  func updateCell() {
+  func updateCell(station: Station) {
+    titleNameLabel.text = station.stationTitle
+    let url = URL(fileURLWithPath: station.imageUrlString)
     
+    DispatchQueue.global().async {
+      do {
+        let data = try Data(contentsOf: url)
+        DispatchQueue.main.async {
+          let img = UIImage(data: data)
+          self.imageView.image = img
+        }
+      } catch {}
+    }
   }
 }
